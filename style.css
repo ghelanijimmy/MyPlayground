@@ -3,7 +3,21 @@
 section {
   position: relative;
   padding-bottom: 20px;
-  padding-top: 150px;
+
+}
+.fly-in-text:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+.emptySection:before {
+  display: block;
+  content: " ";
+  clear: both;
+}
+.emptySection {
+  display: block;
+  margin-top: 50px;
 }
 .fly-in-text {
   list-style: none;
@@ -49,25 +63,18 @@ section {
 .fly-in-text.hidden li:nth-child(7){
   transform: translateX(30px) translateY(200px);
 }
-.fly-in-text:after {
-  display: block;
-  content: " ";
-  clear: both;
-}
-.emptySection:before {
-  display: block;
-  content: " ";
-  clear: both;
-}
-.emptySection {
-  display: block;
-  margin-top: 50px;
-}
+
 
 /*FLY IN TEXT END*/
 
 section{
   margin: 20px auto 20px auto;
+}
+
+/* 3D FLIP */
+.middleSection {
+  display: flex;
+  justify-content: center;
 }
 .boxAnimate{
   position: relative;
@@ -93,7 +100,6 @@ section{
   width: 200px;
   height: 200px;
   margin: 10px;
-  float: left;
 }
 .flip3D > .front {
   position: absolute;
@@ -138,7 +144,9 @@ section{
 .flip3D:hover > .back {
   transform: perspective(500px) rotateY(0deg);
 }
+/* 3D FLIP END*/
 
+/* CLOCK ANIMATION*/
 .section {
   height: 800px;
   margin-bottom: 500px;
@@ -204,3 +212,4 @@ h1.clock-heading {
   0% {transform: rotate(210deg);}
   100% {transform: rotate(26610deg);}
 }
+/* CLOCK ANIMATION END */
