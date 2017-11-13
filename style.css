@@ -1,5 +1,73 @@
+/* FLY IN TEXT ANIMATION*/
+
+section {
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 150px;
+}
+.fly-in-text {
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.fly-in-text li {
+  display: inline-block;
+  color: #000;
+  opacity: 1;
+  transition: all 2.5s ease;
+  margin-right: 10px;
+  font-family: Open Sans, Arial;
+  font-weight: 300;
+  font-size: 2em;
+}
+.fly-in-text li:last-child {
+  margin-right: 0;
+}
+.fly-in-text.hidden li {
+  opacity: 0;
+}
+.fly-in-text.hidden li:nth-child(1){
+  transform: translateX(-200px) translateY(-200px);
+}
+.fly-in-text.hidden li:nth-child(2){
+  transform: translateX(-20px) translateY(-100px);
+}
+.fly-in-text.hidden li:nth-child(3){
+  transform: translateX(-150px) translateY(-80px);
+}
+.fly-in-text.hidden li:nth-child(4){
+  transform: translateX(10px) translateY(-200px);
+}
+.fly-in-text.hidden li:nth-child(5){
+  transform: translateX(-300px) translateY(200px);
+}
+.fly-in-text.hidden li:nth-child(6){
+  transform: translateX(20px) translateY(-20px);
+}
+.fly-in-text.hidden li:nth-child(7){
+  transform: translateX(30px) translateY(200px);
+}
+.fly-in-text:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+.emptySection:before {
+  display: block;
+  content: " ";
+  clear: both;
+}
+.emptySection {
+  display: block;
+  margin-top: 50px;
+}
+
+/*FLY IN TEXT END*/
+
 section{
-  margin: 20px auto 40px;
+  margin: 20px auto 20px auto;
 }
 .boxAnimate{
   position: relative;

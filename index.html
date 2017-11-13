@@ -8,7 +8,18 @@
   </head>
   <body>
     <section>
-      <h1>MY PLAYGROUND</h1>
+      <ul class="fly-in-text hidden">
+        <li>W</li>
+        <li>E</li>
+        <li>L</li>
+        <li>C</li>
+        <li>O</li>
+        <li>M</li>
+        <li>E</li>
+      </ul>
+    </section>
+    <section class="emptySection">
+
     </section>
     <div class="boxAnimate">
       <div class="box">
@@ -52,6 +63,13 @@
         <img class="clock-img seconds" src="img/seconds-png.png" alt="">
       </div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        setTimeout(function(){
+          $('.fly-in-text').removeClass('hidden');
+        }, 500)
+      })();
+    </script>
   </body>
 </html>
