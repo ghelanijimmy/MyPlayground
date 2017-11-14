@@ -71,7 +71,7 @@ section{
   margin: 20px auto 20px auto;
 }
 
-/* 3D FLIP */
+
 .middleSection {
   display: flex;
   justify-content: center;
@@ -96,6 +96,8 @@ section{
     transform: rotate(360deg);
   }
 }
+
+/* 3D FLIP */
 .flip3D{
   width: 200px;
   height: 200px;
